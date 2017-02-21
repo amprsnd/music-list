@@ -1,0 +1,25 @@
+.container {
+
+  background: #fff;
+
+  .filter {
+
+    .c-card__item {
+      border: none;
+    }
+
+    select.c-field {
+      background-color: #fff;
+    }
+
+  }
+
+  .perPage {
+
+    .c-input-group {
+      margin: 10px 0;
+    }
+
+  }
+
+}

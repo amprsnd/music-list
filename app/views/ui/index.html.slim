@@ -1,0 +1,23 @@
+.application
+  header#header
+    == react_component('Header')
+
+
+  section#root.container
+    .o-grid
+      .column3.o-grid__cell.o-grid__cell--width-75
+        == react_component('Table')
+      .o-grid__cell.o-grid__cell--width-25.filter
+        == react_component('Filter')
+
+    .o-grid
+      .o-grid__cell.o-grid__cell--width-75
+        == react_component('Pagination')
+      .o-grid__cell.o-grid__cell--width-25.perPage
+        == react_component('PerPage')
+
+
+  footer#footer
+    .o-grid.container
+      .o-grid__cell
+        == react_component('Footer')
