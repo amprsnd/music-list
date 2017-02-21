@@ -6,10 +6,10 @@ class Table extends React.Component {
                 <table className="c-table c-table--striped">
                     <thead className="c-table__head">
                     <tr className="c-table__row c-table__row--heading">
-                        <th className="c-table__cell">Исполнитель</th>
-                        <th className="c-table__cell">Песня</th>
-                        <th className="c-table__cell">Жанр</th>
-                        <th className="c-table__cell">Год</th>
+                        <th className="c-table__cell">Исполнитель <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
+                        <th className="c-table__cell">Песня <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
+                        <th className="c-table__cell">Жанр <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
+                        <th className="c-table__cell">Год <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
                     </tr>
                     </thead>
                     <tbody className="c-table__body">

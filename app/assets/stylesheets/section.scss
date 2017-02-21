@@ -2,6 +2,20 @@
 
   background: #fff;
 
+  .table {
+
+    .arrow {
+      margin-left: 5px;
+      text-decoration: none;
+
+      &.hide {
+       display: none;
+      }
+    }
+
+  }
+
+
   .filter {
 
     .c-card__item {
