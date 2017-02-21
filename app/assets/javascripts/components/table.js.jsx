@@ -1,3 +1,14 @@
+function Row(props) {
+    return (
+        <tr className="c-table__row">
+            <td className="c-table__cell">{props.artist}</td>
+            <td className="c-table__cell">{props.title}</td>
+            <td className="c-table__cell">{props.genre}</td>
+            <td className="c-table__cell">{props.year}</td>
+        </tr>
+    );
+}
+
 class Table extends React.Component {
     render() {
         return (
@@ -13,36 +24,16 @@ class Table extends React.Component {
                     </tr>
                     </thead>
                     <tbody className="c-table__body">
-                    <tr className="c-table__row">
-                        <td className="c-table__cell">Name</td>
-                        <td className="c-table__cell">Song</td>
-                        <td className="c-table__cell">genre</td>
-                        <td className="c-table__cell">year</td>
-                    </tr>
-                    <tr className="c-table__row">
-                        <td className="c-table__cell">Name</td>
-                        <td className="c-table__cell">Song</td>
-                        <td className="c-table__cell">genre</td>
-                        <td className="c-table__cell">year</td>
-                    </tr>
-                    <tr className="c-table__row">
-                        <td className="c-table__cell">Name</td>
-                        <td className="c-table__cell">Song</td>
-                        <td className="c-table__cell">genre</td>
-                        <td className="c-table__cell">year</td>
-                    </tr>
-                    <tr className="c-table__row">
-                        <td className="c-table__cell">Name</td>
-                        <td className="c-table__cell">Song</td>
-                        <td className="c-table__cell">genre</td>
-                        <td className="c-table__cell">year</td>
-                    </tr>
-                    <tr className="c-table__row">
-                        <td className="c-table__cell">Name</td>
-                        <td className="c-table__cell">Song</td>
-                        <td className="c-table__cell">genre</td>
-                        <td className="c-table__cell">year</td>
-                    </tr>
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
+                        <Row artist="Name" title="Title" genre="Genre" year="Year" />
                     </tbody>
                 </table>
             </div>
