@@ -8,9 +8,16 @@
       margin-left: 5px;
       text-decoration: none;
 
-      &.hide {
-       display: none;
+      &.ASC:after {
+        content: '\21A7';
+        display: inline;
       }
+
+      &.DESC:after {
+        content: "\21A5";
+        display: inline;
+      }
+
     }
 
   }

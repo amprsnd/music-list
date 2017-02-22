@@ -1,3 +1,14 @@
+
+function Head(props) {
+
+    return (
+        <th className="c-table__cell">
+            {props.title}
+            <a href="#" className={`arrow ${props.sort}`} onClick={props.click}></a>
+        </th>
+    )
+}
+
 function Row(props) {
     return (
         <tr className="c-table__row">
@@ -10,6 +21,23 @@ function Row(props) {
 }
 
 class Table extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            sortBy: 'artist', //title, genre, year
+            sortMethod: 'ASC' //DESC
+        };
+
+        this.sortTable = this.sortTable.bind(this)
+
+    }
+
+    sortTable(e) {
+        e.preventDefault();
+        console.log('SORT');
+    }
+
     render() {
         return (
             <div>
@@ -17,10 +45,10 @@ class Table extends React.Component {
                 <table className="c-table c-table--striped">
                     <thead className="c-table__head">
                     <tr className="c-table__row c-table__row--heading">
-                        <th className="c-table__cell">Исполнитель <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
-                        <th className="c-table__cell">Песня <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
-                        <th className="c-table__cell">Жанр <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
-                        <th className="c-table__cell">Год <a href="#" className="arrow up hide">&#8613;</a> <a href="#" className="arrow down">&#8615;</a></th>
+                        <Head title="Исполнитель" slug="artist" sort="ASC" click={(e) => this.sortTable(e)} />
+                        <Head title="Песня" slug="song"         sort="ASC" click={(e) => this.sortTable(e)} />
+                        <Head title="Жанр" slug="genre"         sort="ASC" click={(e) => this.sortTable(e)} />
+                        <Head title="Год" slug="year"           sort="ASC" click={(e) => this.sortTable(e)} />
                     </tr>
                     </thead>
                     <tbody className="c-table__body">
