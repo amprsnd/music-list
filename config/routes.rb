@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'ui#index'
+  root 'tracks#index'
 
   get '/tracks', to: 'tracks#index'
 
