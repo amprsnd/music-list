@@ -36,8 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'slim'
-gem 'react-rails'
-gem 'rails-backbone', '~> 1.3.0', git: 'https://github.com/amprsnd/backbone-rails'
+
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

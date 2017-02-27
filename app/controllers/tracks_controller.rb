@@ -3,6 +3,7 @@ class TracksController < ApplicationController
 
     @tracks = Track.all
     respond_to do |format|
+      format.html { render json: @tracks}
       format.json { render json: @tracks}
     end
 
